@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rock+3D&display=swap" rel="stylesheet"> 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rock+3D&family=Titillium+Web:wght@200;300;600;900&display=swap" rel="stylesheet"> 
+    <title>PlantWorld</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+    <body>
+<div class="all">
+
+    <h1>PlantWorld</h1>
+
+    <form id="addPlantForm">
+        <input id="name" type="text" placeholder="Name">
+        <input id="store" type="text" placeholder="Store">
+        <input id="price" type="number" placeholder="Price">
+        <button>Add your plant</button>
+    </form>
+
+    <div id="filters">
+         <form id="filterByStore">
+            <input id="filterStore" type="text" placeholder="Filter by store">
+            <button>Apply</button>
+        </form>
+
+        <form id="filterByPrice">
+            <input id="filterPrice" type="number" placeholder="Filter by price">
+            <button>Apply</button>
+        </form>
+
+        <button id="reset" type="button">Show all plants</button>
+    </div>
+    
+    <div id="description">
+        <div>Name</div>
+        <div>Store</div>
+        <div>Price</div>
+    </div>
+    <ol id="plants" type="1"></ol>
+
+    <div id="plantBottom"></div>
+</div>
+            
+    <script src="database.js"></script>
+    <script src="index.js"></script> 
+    </body>
+</html>
